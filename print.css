@@ -1,0 +1,44 @@
+@page {
+    margin:1cm;
+}
+
+@page rotated {
+	size: landscape;
+}
+
+table {
+	page: rotated;
+}
+
+html, 
+body {
+    float: none;
+    position: static;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding :0;
+    border: none;
+    font-size: 20pt;
+}
+
+.panel {
+    display: none;
+}
+
+h1 {
+    font-size: 15pt;
+    text-align: center;
+}
+
+h2,
+form, 
+input, 
+p {
+    display: none;
+}
+
+td {
+	border: none;
+	padding: none;
+}

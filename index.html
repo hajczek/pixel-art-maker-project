@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
+    <script
+       src="https://code.jquery.com/jquery-3.2.1.min.js"
+       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+       crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+	
+	<div class="panel">
+	    <h2>PANEL</h2>               
+
+        <form id="sizePicker">
+			<h3>Enter your title</h3>
+			<input type="text" id="title">    
+            <input type="button" id="input_title" value="Save New Title">
+			<h3>Choose Grid Size</h3>
+            <label>Set Grid Height:</label>
+            <input type="number" id="input_height" name="height" min="1" value="1">
+            <label>Set Grid Width:</label>
+            <input type="number" id="input_width" name="width" min="1" value="1">
+            <input type="button" id="input_submit" value="Create canvas">
+			<h3>Pick a color</h3>
+			<input id="colorPicker" type="color">
+			<p>Click on cell to change color</p>
+			<!-- TODO: add button to change canvas color -->
+			<input type="button" id="input_canvas" value="Change Canvas Color">
+			<!-- TODO: add button to change border color cell -->  
+            <input type="button" id="input_background" value="Change Background Color">
+			<!-- TODO: add button to clear canvas color -->
+            <input type="button" id="input_reset" value="Clear Canvas Color">
+			<!-- TODO: add button to change background color -->
+			<input type="button" id="input_header" value="Change Title Color">			
+			<!-- TODO: add button to change h1 color -->             
+            <input type="button" id="input_cell" value="Change Cell Border Color">			
+			<h3>Clear project</h3>		   
+		    <!-- TODO: add button to reload page -->
+            <input type="button" value="Clear everything" id="input_reload">
+			<h3>Print project</h3>
+			<!-- TODO: add button to print project -->
+            <input type="button" id="input_print" value="Print your project">
+        </form>
+		
+    </div>
+	
+	<h1>Lab: Pixel Art Maker</h1>
+	
+	<table id="pixel_canvas"></table>
+	
+<script src="designs.js"></script>
+	
+</body>
+
+</html>
