@@ -15,3 +15,6 @@
 - click on the button 'Clear everything' to reset project,
 - click on the button 'Print your Project' to open panel to print project,
 - put the text to input text field and click on the button 'Save New Title' to change the text in element h1.
+
+## LICENSE
+The MIT License - See [license.md](https://github.com/hajczek/pixel-art-maker-project/blob/master/license/License.md)
