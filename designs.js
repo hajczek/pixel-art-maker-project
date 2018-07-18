@@ -35,7 +35,7 @@ function makeGrid(row, col) {
     }
 };
 
-// TODO: value of color in color picker
+// Value of color in color picker
 $(colorPicker).on('change', function(){valueColor = $(this).val();});
 
 /**
@@ -46,37 +46,37 @@ $(colorPicker).on('change', function(){valueColor = $(this).val();});
 */
 function chooseColor(){
 	
-	// TODO: change color a clicked cell
+	// Change color a clicked cell
 	$('table tr td').click(function(){
         $(this).css('background-color', valueColor);
     });
 	
-	// TODO: change color all cells
+	// Change color all cells
     $(canvasColorInput).click(function(){
         $('table tr td').css('background-color', valueColor);
     });
 	
-	// TODO: reset color all cells
+	// Reset color all cells
     $(resetColor).click(function(){
         $('table tr td').css('background-color', '#fff');
     });
 	
-	// TODO: change a background color
+	// Change a background color
 	$(bgInput).click(function(){
         $('body').css('background-color', valueColor);
     });
 	
-	// TODO: change a h1 color
+	// Change a h1 color
 	$(headerColorInput).click(function(){
         $('h1').css('color', valueColor);
     });
 	
-	// TODO: change a cell border color
+	// Change a cell border color
 	$(cellInput).click(function(){
         $('table tr td').css('border-color', valueColor);
     });
     
-	// TODO: change a cell color with onclick mouse button and moving mouse
+	// Change a cell color with onclick mouse button and moving mouse
    $('td').mousedown(function(event){
         if(event.buttons){
             $(this).css('background-color', valueColor);
@@ -112,7 +112,7 @@ function printProject(){
     });
 };
 
-// TODO: make a grid 
+// Make a grid 
 heightInput.on('change', function(){heightCanvas = $(this).val();});
 
 widthInput.on('change', function(){widthCanvas = $(this).val();});
@@ -122,11 +122,11 @@ submitInput.on('click', function(){
     chooseColor();
 });
 
-// TODO: change text in h1
+// Change text in h1
 titleInput.on('click', function(){changeTitle();});
 
-// TODO: open panel to print
+// Open panel to print
 printInput.on('click', function(){printProject();});
 
-// TODO: reload page
+// Reload page
 reloadInput.on('click', function(){location.reload();});
